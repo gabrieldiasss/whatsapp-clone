@@ -1,0 +1,84 @@
+.app-window {
+    display: flex;
+    height: 100vh;
+
+    aside.sidebar {
+
+        width: 35%;
+        max-width: 415px;
+        border-right: 2px solid #eaeaeb;
+    
+        display: flex;
+        flex-direction: column;
+    
+        header {
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px 0 16px;
+    
+            height: 60px;
+            background-color: #ededed;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+    
+            .header-btns {
+                cursor: pointer;
+                display: flex;
+                gap: 32px;
+            }
+    
+        }
+    
+        .search {
+    
+            padding: 8px 16px;
+            background-color: #f6f6f6;
+    
+            border-bottom: 2px solid #ebebeb;
+    
+            .fake-input {
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+    
+                height: 35px;
+    
+                border-radius: 30px;
+    
+                padding: 0 16px;
+    
+                input {
+                    border: 0;
+                    outline: 0;
+    
+                    margin-left: 16px;
+    
+                    width: 100%;
+                }
+    
+            }
+    
+        }
+    
+        .list {
+            
+            flex: 1;
+            background-color: #fff;   
+            overflow: auto;
+            
+        }
+    
+    }
+
+    .content {
+        flex: 1;
+    }
+    
+}

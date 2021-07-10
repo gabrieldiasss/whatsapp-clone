@@ -1,0 +1,135 @@
+.chatWindow {
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    header {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 24px 0 16px;
+
+        background-color: #ededed;
+        height: 60px;
+
+        border-left: 1px solid rgb(218, 218, 218);
+        border-bottom: 1px solid rgb(218, 218, 218);
+
+        .header-infos {
+
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+            }
+
+            h3 {
+                font-size: 15px;
+                font-weight: 400;
+                margin-left: 14px;
+            }
+
+        }
+
+        .header-btns {
+
+            display: flex;
+            gap: 32px;
+            
+
+            .header-btn {
+
+                cursor: pointer;
+                
+                
+            }
+            
+        }
+
+    }
+
+    main {
+
+        background-color: aquamarine;
+        
+        flex: 1;
+
+        padding: 20px 30px;
+
+        overflow: auto;
+        
+    }
+
+    footer {
+
+        display: flex;
+        align-items: center;
+
+        justify-content: space-between;
+
+        background-color: #f1f1f1;
+        height: 70px;
+    
+
+        .icon-pre,
+        .icon-pos {
+            display: flex;
+            cursor: pointer;
+
+            margin: 0 15px;
+
+        }
+
+        .btn {
+            overflow: hidden;
+            transition: all ease 0.3s;
+
+        }
+
+        .input-area {
+            flex: 1;
+
+            input {
+
+                height: 40px;
+                border-radius: 20px;
+
+                border: 0;
+                outline: 0;
+                width: 100%;
+
+                color: #4a4a4a;
+                font-size: 17px;   
+
+                padding-left: 20px;
+
+            }
+
+        }
+
+        
+
+    }
+
+    .emoji-area {
+        
+        overflow-y: hidden;
+        transition: all ease 0.4s;
+        
+        aside.emoji-picker-react {
+            width: auto;
+        }
+        
+    }
+
+    
+
+}
+
