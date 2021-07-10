@@ -16,7 +16,7 @@ import MessageWindow from '../MessageWindow/MessageWindow'
 
 import './chatWindow.scss'
 
-function ChatWindow({ user, list }) {
+function ChatWindow({ user, lists }) {
 
     const [ emojiOpen, setEmojiOpen ] = useState(false)
     const [text, setText] = useState('')
@@ -177,8 +177,8 @@ function ChatWindow({ user, list }) {
             <header>
 
                 <div className="header-infos" >
-                    <img src={list.avatar} />
-                    <h3>{list.name}</h3>
+                    <img src="https://mk0anatomieunes58h83.kinstacdn.com/wp-content/themes/cera/assets/images/avatars/user-avatar.png" />
+                    <h3>Fulano</h3>
                 </div>
 
                 <div className="header-btns" >

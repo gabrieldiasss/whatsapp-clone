@@ -119,7 +119,6 @@ function App() {
 
 					<ChatWindow
 						user={user}
-						list={lists}
 					/>
 					
 				)}
